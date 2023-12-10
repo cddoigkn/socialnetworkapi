@@ -43,7 +43,7 @@ const thoughtSchema = new mongoose.Schema(
     reactions: {
       type: [reactionSchema]
     }
-  } 
+  }
 )
 
 function dateFormat(createdAt) {
