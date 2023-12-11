@@ -4,7 +4,9 @@ const {
   getUserById,
   createUser,
   deleteUserById,
-  updateUserById
+  updateUserById,
+  giveUserAFriend,
+  getRidOfAFriend
 } = require('../../controllers/user.controller');
 
 // gets all users //
