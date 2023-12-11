@@ -74,5 +74,6 @@ module.exports = {
   createUser: createItem,
   updateUserById: updateItemById,
   deleteUserById: deleteItemById,
-  giveUserAFriend
+  giveUserAFriend,
+  getRidOfAFriend
 }
