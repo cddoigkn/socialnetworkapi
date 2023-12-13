@@ -49,7 +49,7 @@ async function redundantReaction(id, data) {
   try {
     const thoughtToChange = await Model.findById(id);
     const currentReaction = thoughtToChange.reactions;
-    return await Model.redundantReaction(
+    return await Model.findByIdAndUpdate(
       { _id: id }, { reactions: [...currentReaction, data] }, { new: true }
     )
   } catch (err) {
